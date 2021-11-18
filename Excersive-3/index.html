@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="font-awesome-4.7.0/scss/font-awesome.scss">
+    <title>Menu</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/icon/fontawesome-free-5.15.4-web/css/all.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #efefef;
+}
+
+/* Css for menu */
+
+#header {
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#header__content {
+    width: 70%;
+    margin: auto;
+    border-bottom: 1px solid #8f1616;
+    border-left: 3px solid #8f1616;
+}
+
+#main-menu {
+    height: 40px;
+    display: block;
+    background-color: #e3e3e3;
+}
+
+#main-menu > ul > li {
+    float: left;
+    position: relative;
+}
+
+#main-menu > ul > li > a {
+    font-family: 'Roboto', sans-serif;
+    color: #525252;
+    padding: 0 15px 0 15px;
+    line-height: 40px;
+    font-size: 13px;
+    display: block;
+    font-weight: 600;
+}
+
+#main-menu > ul > li > a:hover {
+    background-color: #8f1616;
+    color: #eeeeee;
+    transition: ease-in 0.2s;
+}
+
+#main-menu li:hover #sub-menu {
+    display: block;
+
+}
+
+#sub-menu {
+    width: 130px;
+    background-color: #e3e3e3;
+    position: absolute;
+    top: 41px;
+    display: none;
+}
+
+#sub-menu li {
+    border-bottom: solid 1px #8c8c8c;
+
+}
+
+#sub-menu li a {
+    font-family: 'Roboto', sans-serif;
+    color: #1a1a1a;
+    font-size: 12px;
+    line-height: 40px;
+    display: block;
+    padding-left: 15px;
+}
+
+#sub-menu li a:hover {
+    background-color: #8f1616;
+    color: #eeeeee;
+    transition: ease-in 0.2s;
+}
+
+/* Css for form 1 */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-1 {
+    width: 727px;
+    height: 657px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
+
+.form-1-header {
+    display: flex;
+    justify-content: center;
+
+}
+
+.form-1-header h3 {
+    font-size: 30px;
+    font-weight: 1000;
+
+    font-family: 'Roboto', sans-serif;
+    padding: 40px;
+}
+
+.form-1-content form {
+
+}
+
+.form-1-element {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 43px;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+}
+
+.form-1-element input {
+    display: block;
+}
+
+.form-1-name {
+
+}
+
+.form-1-email {
+    float: left;
+}
+
+.form-1-phone {
+    float: left;
+}
+
+.form-1-width {
+    width: 640px;
+}
+
+.form-1-height {
+    height: 70px;
+}
+
+.form-1-mess {
+
+}
+
+#form-1 input, textarea, select {
+    border: none;
+    background-color: #f7f7f7;
+    font-size: 17px;
+    padding: 10px 0;
+}
+
+#form-1 label {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    padding-left: 1px;
+    margin-bottom: 5px;
+}
+
+#form-1 select {
+    left: -3px;
+    position: relative;
+}
+
+#form-1 #form-1-submit {
+    padding: 10px 300px;
+    border-radius: 35px;
+    color: #dadada;
+    background-color: #1a1a1a;
+    height: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.form-1-email, .form-1-phone {
+    width: 43%;
+    margin: 0;
+}
+
+.form-1-email {
+    margin-left: 43px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+/*  css for form-2  */
+#form-2 {
+    width: 940px;
+    height: 700px;
+    background-image: url("img/p1.jpg");
+    background-size: 100% 100%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 100px;
+
+}
+
+#form-2-containt {
+    height: 600px;
+    width: 340px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#form-2-containt h1 {
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    width: 78px;
+    margin-top: 74px;
+}
+
+.form-2-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-1-input {
+    width: 245px;
+    height: 35px;
+    border-radius: 13px;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #1a1a1a;
+    box-shadow: 0px 3px 20px 10px #f1f1f1;
+    background-color: #ffffff;
+    border: none;
+}
+
+#form-2-submit {
+    background-color: #bd59d7;
+    border-radius: 30px;
+    width: 150px;
+    height: 40px;
+    color: #f7f7f7;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 5px;
+    border: none;
+    margin-bottom: 30px;
+    box-shadow: 0px 7px 20px 0 #c589e0;
+}
+
+.form-2-login-other h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #cccccc;
+    font-size: 13px;
+    margin: 20px;
+}
+
+.form-2-login-other-icon p {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px 2px #cbcbcb;
+    margin: 5px;
+}
+
+.form-2-login-other-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.form-2-iconFB {
+    color: darkblue;
+}
+
+form-2-iconGG {
+    color: red;
+}
+
+#form-2-signup {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: none;
+    color: #4d4d4d;
+}
+
+
+/* css form-3*/
+#form-3 {
+    width: 535px;
+    height: 745px;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+#form-3 form {
+    width: 450px;
+    height: 670px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-3 label {
+    color: #7ed321;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px 0;
+}
+
+
+#form-3 #account {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#form-3 .input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e7e7e7;
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    border-radius: 2px;
+}
+
+#form-3  i {
+    line-height: 25px;
+    padding: 0 10px;
+    border-right: 1px solid #e7e7e7;
+    color: #a6a5a5;
+}
+
+#form-3 input {
+    flex: 1;
+    height: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #f9f9f9;
+}
+
+.birthday {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#birthday div {
+    display: flex;
+}
+
+#birthday div .input {
+    width: 60px;
+    margin-right: 10px;
+}
+
+#bound {
+    display: flex;
+    flex-direction: row;
+}
+#gender{
+    width: 50%;
+}
+#gender div{
+    display: flex;
+}
+#gender button{
+    height: 40px;
+   box-sizing: border-box;
+    padding: 0 40.5px;
+
+}
+
+
+#gender .selectButton{
+    background-color: #7ed321;
+}
+
+#gender .hoverButton:hover{
+    background-color: #9dd560;
+}
+
+#birthday div{
+    margin: 10px 0 20px 0;
+}
+#gender div{
+    margin: 10px 0;
+}
+
+#pay{
+    display: flex;
+    flex-direction: column;
+}
+#pay div{
+    display: flex;
+    margin: 5px 0;
+}
+
+#pay button{
+    height: 40px;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 50px ; border: 1px solid #e7e7e7;
+    background-color: #f9f9f9;
+}
+
+#pay button:first-child{
+    background-color: #7ed321;
+}
+#form-3 button{
+    color: #8c8c8c;
+}
+
+#form-3 button i{
+    border-right: none;
+}
+
+#pay {
+    margin-bottom: 25px;
+}
+#pay .input {
+    margin: 5px 0;
+}
+#accept div{
+    margin-top: 15px;
+    display: flex;
+    align-items: start;
+}
+#accept div input{
+    height: 25px;
+    margin-right: 10px;
+
+}
+
+#accept div p{
+    font-family: 'Roboto', sans-serif;
+    color: #8c8c8c;
+}
+    </style>
+</head>
+<body>
+<div id="header">
+    <div id="header__content">
+        <div id="main-menu">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href=""> PRODUCTS</a>
+                    <ul id="sub-menu">
+                        <li><a href="">Tivi</a></li>
+                        <li><a href="">Máy tính xách tay</a></li>
+                    </ul>
+                </li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="form">
+    <!-- form-1-->
+    <div id="form-1">
+        <div class="form-1-header">
+            <h3>Contact us</h3>
+        </div>
+        <div class="form-1-content">
+            <form action="">
+                <div class="form-1-name form-1-element form-1-height form-1-width">
+                    <label for="form-1-name">FULL NAME*</label>
+                    <input type="text" id="form-1-name" placeholder="Enter Your Fullname">
+                </div>
+                <div class="form-1-email form-1-element form-1-height">
+                    <label for="form-1-email">EMAIL*</label>
+                    <input type="text" id="form-1-email" placeholder="Enter Your Email">
+                </div>
+                <div class="form-1-phone form-1-element form-1-height">
+                    <label for="form-1-phone">PHONE</label>
+                    <input type="text" id="form-1-phone" placeholder="Enter Your Number Phone">
+                </div>
+                <div class="form-1-server form-1-element form-1-height form-1-width">
+                    <label for="form-1-server">NEEDED SERVICES</label>
+                    <select name="server" id="form-1-server">
+                        <option value="">Please chooses</option>
+                        <option value="adsive">Adsive</option>
+                        <option value="buying">Buying</option>
+                    </select>
+                </div>
+                <div class="form-1-mess form-1-element form-1-width">
+                    <label for="form-1-mess">MESSAGE</label>
+                    <textarea name="mess" id="form-1-mess" cols="70" rows="4"
+                              placeholder="Your message here..."></textarea>
+                </div>
+                <input type="submit" id="form-1-submit" class="form-1-element form-1-width" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- form-2-->
+    <div id="form-2">
+        <div id="form-2-containt">
+            <h1>Sign in</h1>
+            <div class="form-2-content">
+                <form action="#">
+                    <input type="text" class="form-1-input" placeholder="username or email">
+                    <input type="password" class="form-1-input" name="" placeholder="password" id="form-2-password">
+                    <input type="submit" name="" id="form-2-submit" value="SIGN IN">
+                </form>
+            </div>
+            <div class="form-2-login-other">
+                <h3>Or login with</h3>
+                <div class="form-2-login-other-icon">
+                    <p class="form-2-iconFB"><i class="fab fa-facebook-square"></i></p>
+                    <p class="form-2-iconGG"><i class="fab fa-google"></i></p>
+                </div>
+            </div>
+            <button id="form-2-signup">Sign Up</button>
+        </div>
+    </div>
+
+
+    <!-- form-3-->
+    <div id="form-3">
+        <form action="#">
+            <!--  account-->
+            <div id="account">
+                <label for="name">Account</label>
+                <div class="input">
+                    <p><i class="fas fa-user"></i></p>
+                    <input type="text" id="name" placeholder="Full Name">
+                </div>
+                <div class="input">
+                    <p><i class="fal fa-envelope"></i></p>
+                    <input type="text" id="email" placeholder="Email Address">
+                </div>
+                <div class="input">
+                    <p><i class="fas fa-key"></i></p>
+                    <input type="text" id="password" placeholder="Password">
+                </div>
+            </div>
+            <!--  birthday-->
+            <div id="bound">
+                <div id="birthday">
+                    <label>Date of Birth</label>
+                    <div><input type="text" id="day" class="input" placeholder="DD">
+                        <input type="text" id="month" class="input" placeholder="MM">
+                        <input type="text" id="year" class="input" placeholder="YYYY">
+                    </div>
+                </div>
+                <div id="gender">
+                    <label>Gender</label>
+                    <div>
+                        <button class="input hoverButton" id="male">Male</button>
+                        <button class="input hoverButton" id="female">Female</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pay">
+                <label>Payment Detail</label>
+                <div>
+                    <button><i class="fab fa-cc-visa"></i> Credit Card</button>
+                    <button><i class="fab fa-cc-paypal"></i> Paypal</button>
+                </div>
+
+                <div class="input">
+                    <p><i class="far fa-credit-card"></i></p>
+                    <input type="text" id="card-number" placeholder="Card Number">
+                </div>
+
+                <div class="input">
+                    <p><i class="fas fa-user"></i></p>
+                    <input type="text" placeholder="Card CVC">
+
+                </div>
+            </div>
+            <div id="accept">
+                <label>Terms and Conditions</label>
+                <div>
+                    <input type="checkbox" value="" id="accept-checkbox">
+                    <p>I accept the terms and conditions for signing up to service, and here by confirm i have read the
+                        private policy.</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

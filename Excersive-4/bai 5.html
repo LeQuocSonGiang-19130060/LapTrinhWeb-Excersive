@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Bai 5</title>
+    <style>
+        img {
+            width: 200px;
+            margin: 200px auto;
+            transition: all 0.9s ease;
+        }
+
+        body {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+<img src="img/seven.jpg" id="image" alt="Florentino-seven">
+
+<script>
+    $(document).ready(function () {
+        let corner = 15;
+        //let img = document.querySelector("img");
+        let img = $("#image");
+        setInterval(function () {
+            rotate(img);
+        }, 2000);
+
+        function rotate(image) {
+         //   image.setAttribute("style", "transform: rotate(" + corner + "deg)");
+            image.css("transform", "rotate(" + corner + "deg)");
+            corner = corner + 15;
+        }
+    })
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Bai 7</title>
+    <style>
+        #container {
+            width: 670px;
+            flex-wrap: wrap;
+            margin: 50px auto;
+        }
+
+        body {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+<div id="container"></div>
+
+
+<script>
+    $(document).ready(function () {
+        for (let i = 1; i < 65; i++) {
+            let btn = $("<button></button>").text(i);
+            btn.css("width", "70");
+            btn.css("height", "70px");
+            btn.css("margin", "4px");
+            btn.css("font-size", "20px");
+            btn.css("font-weight", "bold");
+            btn.css("top", "calc((i-1)/8 * 80px)");
+            btn.css("top", 80*parseInt((i-1)/8) + "px");
+            btn.css("left", 80*parseInt((i-1)%8) + "px");
+            btn.css("position", "absolute");
+
+
+            btn.click(function () {
+                clickButton(btn);
+            });
+            $("#container").append(btn);
+        }
+
+        let lastButton;
+
+        function clickButton(button) {
+            if (lastButton == undefined) {
+                lastButton = button;
+            } else {
+                if (parseInt(button.text()) === (parseInt(lastButton.text()) + 1)) {
+                    lastButton.hide();
+                    button.hide();
+                    lastButton = button;
+                } else {
+                    lastButton = undefined;
+                    alert("the order is not correct!");
+                }
+            }
+        };
+    });
+</script>
+</body>
+</html>
